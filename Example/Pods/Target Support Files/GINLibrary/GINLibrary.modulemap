@@ -1,0 +1,6 @@
+framework module GINLibrary {
+  umbrella header "GINLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

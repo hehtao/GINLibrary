@@ -1,0 +1,6 @@
+framework module Pods_GINLibrary_Tests {
+  umbrella header "Pods-GINLibrary_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
