@@ -1,8 +1,8 @@
 {
   "name": "GINLibrary",
-  "version": "0.1.0",
-  "summary": "A short description of GINLibrary.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.0.1",
+  "summary": "GINS Library.",
+  "description": "GINS Library,all Copyrights are owned by GIN;",
   "homepage": "https://github.com/hehtao/GINLibrary",
   "license": {
     "type": "MIT",
@@ -13,10 +13,11 @@
   },
   "source": {
     "git": "https://github.com/hehtao/GINLibrary.git",
-    "tag": "0.1.0"
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "GINLibrary/Classes/**/*"
+  "source_files": "GINLibrary/Classes/**/*",
+  "public_header_files": "GINLibrary/Classes/**/*.h"
 }

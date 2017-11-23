@@ -1,12 +1,15 @@
 use_frameworks!
-
+platform :ios, '9.0'
+source 'https://github.com/CocoaPods/Specs.git'  # 官方库
+source 'https://github.com/hehtao/GINSpecs.git'   # 私有库
 target 'GINLibrary_Example' do
-  pod 'GINLibrary', :path => '../'
-
+#  pod 'GINLibrary', :podspec => '../GINLibrary.podspec'
+  pod 'GINLibrary'
+  pod 'MBProgressHUD'
   target 'GINLibrary_Tests' do
     inherit! :search_paths
 
-    pod 'Specta'
+  pod 'Specta'
   pod 'Expecta'
   pod 'FBSnapshotTestCase'
   pod 'Expecta+Snapshots'
