@@ -1,9 +1,10 @@
 EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks "$PODS_CONFIGURATION_BUILD_DIR/Expecta" "$PODS_CONFIGURATION_BUILD_DIR/Expecta+Snapshots" "$PODS_CONFIGURATION_BUILD_DIR/FBSnapshotTestCase" "$PODS_CONFIGURATION_BUILD_DIR/Specta" "$PODS_CONFIGURATION_BUILD_DIR/GINLibrary" "$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD"
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks "$PODS_CONFIGURATION_BUILD_DIR/Expecta" "$PODS_CONFIGURATION_BUILD_DIR/Expecta+Snapshots" "$PODS_CONFIGURATION_BUILD_DIR/FBSnapshotTestCase" "$PODS_CONFIGURATION_BUILD_DIR/Specta" "$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GINLibrary"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Expecta+Snapshots/Expecta_Snapshots.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Expecta/Expecta.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FBSnapshotTestCase/FBSnapshotTestCase.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Specta/Specta.framework/Headers" $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/GINLibrary/GINLibrary.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD/MBProgressHUD.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Expecta" -framework "Expecta_Snapshots" -framework "FBSnapshotTestCase" -framework "Specta"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Expecta+Snapshots/Expecta_Snapshots.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Expecta/Expecta.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FBSnapshotTestCase/FBSnapshotTestCase.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Specta/Specta.framework/Headers" $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD/MBProgressHUD.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GINLibrary"
+OTHER_LDFLAGS = $(inherited) -framework "Expecta" -framework "Expecta_Snapshots" -framework "FBSnapshotTestCase" -framework "Specta" -framework "UIKit"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
