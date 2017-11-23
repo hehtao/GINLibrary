@@ -17,8 +17,8 @@ s.source           = { :git => 'https://github.com/hehtao/GINLibrary.git', :tag 
 s.social_media_url = 'http://www.detaogroup.com'
 s.ios.deployment_target = '9.0'
 s.requires_arc = true
-s.source_files = 'Classes/**/*'
-s.public_header_files = 'Classes/*.h'
+s.source_files = 'Pod/Classes/**/*'
+#s.public_header_files = 'Pod/Classes/*.h'
 s.dependency 'MBProgressHUD', '~> 1.1.0'
 s.frameworks = 'UIKit'
 
