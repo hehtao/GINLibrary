@@ -11,8 +11,6 @@
 #endif
 
 #import "DTUUIDManager.h"
-#import "SAMKeychain.h"
-#import "SAMKeychainQuery.h"
 
 FOUNDATION_EXPORT double GINLibraryVersionNumber;
 FOUNDATION_EXPORT const unsigned char GINLibraryVersionString[];

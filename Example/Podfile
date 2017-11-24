@@ -4,7 +4,7 @@ source 'https://github.com/CocoaPods/Specs.git'  # 官方库
 source 'https://github.com/hehtao/GINSpecs.git'   # 私有库
 target 'GINLibrary_Example' do
 #  pod 'GINLibrary', :podspec => '../GINLibrary.podspec'
-  pod 'GINLibrary' , '~> 0.0.2'
+  pod 'GINLibrary' , '~> 0.0.3'
   pod 'MBProgressHUD'
   target 'GINLibrary_Tests' do
     inherit! :search_paths
